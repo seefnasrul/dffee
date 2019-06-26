@@ -1,13 +1,11 @@
 import { Injectable } from '@angular/core';
-import { ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree, CanActivate, Router } from '@angular/router';
+import { ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree, Router, CanActivate } from '@angular/router';
 import { Observable } from 'rxjs';
-import { Storage } from '@ionic/storage';
-// import { CanActivate } from '@guard'
+
 @Injectable({
   providedIn: 'root'
 })
-export class TutorialGuard implements CanActivate {
-
+export class IntroGuard implements CanActivate {
   constructor(private storage: Storage, private router: Router) {}
 
   async canActivate(
@@ -18,9 +16,10 @@ export class TutorialGuard implements CanActivate {
     const isComplete = await this.storage.get('tutorialComplete');
 
     if (!isComplete) {
-      this.router.navigateByUrl('/tutorial');
+      this.router.navigateByUrl('/intro');
     }
 
     return isComplete;
   }
+
 }

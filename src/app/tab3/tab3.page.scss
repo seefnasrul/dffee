@@ -1,1 +1,28 @@
+.item-container{
+    display:inline-block;
+    width:33%;
+}
 
+.item-label{
+    font-size:1em;
+    font-weight:bold;
+    color:lightgrey;
+}
+
+.item-value{
+    color:var(--ionic-color-dark);
+    font-size:4.5vw;
+    font-weight:bolder
+}
+
+.color-success{
+    color:#10dc60 !important;
+}
+
+.color-danger{
+    color:#f04141 !important;
+}
+
+ion-card{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}

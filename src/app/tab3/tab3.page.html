@@ -1,9 +1,44 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Three
+      D'ffee
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <!-- List of Sliding Items -->
+  <ion-grid>
+    <ion-row>
+      <ion-col size=12 *ngFor="let item of dummyArray; let index = index" >
+        <ion-card>
+          <ion-card-content>
+            <div class="info-list">
+
+              <div class="item-container">
+                <div class="item-label">Total Item</div>
+                <div class="item-value">{{ index+1 }} Items</div>
+              </div>
+
+              <div class="item-container">
+                <div class="item-label">Price</div>
+                <div class="item-value">Rp{{ index+1 }}0.850</div>
+              </div>
+
+              <div class="item-container">
+                <div class="item-label">Status</div>
+                <div class="item-value " [class.color-success]="(index%2) == 0" [class.color-danger]="(index%2) == 1" >{{ (index%2 == 0 ) ? 'Delivered' : 'Pickup' }}</div>
+              </div>
+            
+            </div>
+
+            <p><small><b>2 hours ago</b></small></p>
+
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      
+    </ion-row>
+  </ion-grid>
+</ion-content>

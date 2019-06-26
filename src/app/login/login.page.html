@@ -1,9 +1,44 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
     <ion-title>login</ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
-<ion-content>
+<ion-content class="login-body">
+  <ion-grid>
+    <ion-row class="form-container">
+      <ion-col size="12">
+        <div class="logo-container">
+            <ion-img class="logo" src="../../assets/logo.jpg" ></ion-img>
+        </div>
+      </ion-col>
 
+      <ion-col size="12">
+        
+        <ion-item>
+          <ion-label position="stacked">(+62) Phone Number</ion-label>
+          <ion-input type="number"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Password</ion-label>
+          <ion-input type="password" ></ion-input>
+        </ion-item>
+
+        <ion-button href="/tabs/tab1" class="btn-login" expand="block" shape="round">Login</ion-button>
+
+      </ion-col>
+    </ion-row>
+
+    <ion-row  class="form-container social-media-container">
+      <ion-col size="12" class="social-media-title">
+        Login with Social Media
+      </ion-col>
+      <ion-col size="12" class="social-media-items">
+        <a href="/tabs/tab1"><ion-icon  name="logo-facebook"></ion-icon></a>
+        <a href="/tabs/tab1"><ion-icon  name="logo-twitter"></ion-icon></a>
+        <a href="/tabs/tab1"><ion-icon  name="logo-googleplus"></ion-icon></a>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

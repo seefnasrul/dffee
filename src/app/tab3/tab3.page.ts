@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class Tab3Page {
 
-  constructor() {}
+  dummyArray = new Array(100);
 
+  constructor() {}
 }
