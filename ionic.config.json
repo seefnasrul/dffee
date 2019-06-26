@@ -1,5 +1,7 @@
 {
   "name": "dffee",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

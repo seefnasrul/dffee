@@ -4,3 +4,111 @@
 // styles are for the entire app and not just one component. Additionally, this 
 // file can hold Sass mixins, functions, and placeholder classes to be imported 
 // and used throughout the application.
+
+.section-bar{
+    display:block;
+    width:100%;
+    padding:0 0 0 0;
+}
+.section-bar .section-title{
+    font-size:18px;
+    font-weight:bold;
+    display:inline-block;
+    margin-right:5px;
+}
+.section-bar .section-title::before{
+    content:'';
+    display: inline-block;
+    top:0.5em;
+    position: relative;
+    height:30px;
+    width:15px;
+    border-top-right-radius:50%;
+    border-bottom-right-radius:50%;
+    background-color:var(--ion-color-primary);
+    z-index: 9999;
+}
+
+
+.coupon-icon{
+    background-image:url('../assets/icon/coupon.svg');
+    background-repeat: no-repeat;
+    background-size:contain;
+    height:30px;
+    width:30px;
+    position: relative;
+    top:0.5em;
+    display:inline-block;
+}
+
+.section-bar .icon{
+    // min-width:30px;
+    // margin-top:5px;
+}
+
+.header-bg-brown{
+    // --background:var(--ion-color-primary);
+}
+.home-slider{
+    max-height:50vw;
+}
+.horizontal-scroll{
+    overflow-x: scroll!important;
+    overflow-y: hidden;
+    word-wrap: break-word;
+        font-size:0.8em;
+        font-weight:300;
+}
+
+#full-stars-example-two {
+
+    /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+    .rating-group {
+        height:200px;
+      display: inline-flex;
+    }
+    
+    /* make hover effect work properly in IE */
+    .rating__icon {
+      pointer-events: none;
+    }
+    
+    /* hide radio inputs */
+    .rating__input {
+     position: absolute !important;
+     left: -9999px !important;
+    }
+    
+    /* hide 'none' input from screenreaders */
+    .rating__input--none {
+      display: none
+    }
+  
+    /* set icon padding and size */
+    .rating__label {
+      cursor: pointer;
+      padding: 0 0.1em;
+      font-size: 2rem;
+    }
+    
+    /* set default star color */
+    .rating__icon--star {
+      color: orange;
+    }
+  
+    /* if any input is checked, make its following siblings grey */
+    .rating__input:checked ~ .rating__label .rating__icon--star {
+      color: #ddd;
+    }
+    
+    /* make all stars orange on rating group hover */
+    .rating-group:hover .rating__label .rating__icon--star {
+      color: orange;
+    }
+  
+    /* make hovered input's following siblings grey on hover */
+    .rating__input:hover ~ .rating__label .rating__icon--star {
+      color: #ddd;
+    }
+  }
+  
