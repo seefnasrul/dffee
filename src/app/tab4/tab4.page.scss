@@ -1,1 +1,74 @@
+ion-content{
+    --ion-background-color:#905d47;
+}
 
+.wrapper {
+    background: url('../../assets/bg-coffee-beans.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 45vh;
+    overflow: hidden;
+    position: relative;
+    border-bottom:solid 1px;
+    border-bottom-color:#905d47;
+    box-shadow:none !important;
+}
+  
+.cut {
+    background: #905d47;
+    position:absolute;
+    top: 40vh;
+    left: -50px;
+    width: 500px;
+    height: 300px;
+    transform-origin: center top;
+    transform: rotate(8deg);
+    border:none !important;
+}
+.profile{
+    margin-top:10vh;
+    margin-left:10vw;
+
+}
+
+.profile .pic-container{
+    top:15px;   
+    position: relative;
+    width:75px;
+    height:75px;
+    border-radius:50%;
+    background-color:#fff;
+    overflow:hidden;
+}
+
+.profile .pic-container .profile-picture{
+    width:100%;
+}
+
+.profile .pic-container, .profile .info, .profile .edit{
+    margin-left:10px;
+    display:inline-block;
+}
+
+.profile .info .name{
+    font-size:7vw;
+    letter-spacing:0.1em;
+}
+
+.profile .info .phone    {
+    font-size:4;
+    letter-spacing:0.1em;
+}
+
+.profile .edit ion-icon{
+    color:var(--ion-color-medium-tint);
+    font-size:2em;
+    position:relative;
+    top:5px;
+    right:1px;
+}
+
+.profile .info{
+    color:var(--ion-color-primary-contrast);
+}
