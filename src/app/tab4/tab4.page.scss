@@ -1,5 +1,6 @@
 ion-content{
     --ion-background-color:#905d47;
+    z-index:-999999 !important;
 }
 
 .wrapper {
@@ -9,10 +10,11 @@ ion-content{
     width: 100%;
     height: 45vh;
     overflow: hidden;
-    position: relative;
+    position: absolute;
     border-bottom:solid 1px;
     border-bottom-color:#905d47;
     box-shadow:none !important;
+    z-index:20;
 }
   
 .cut {
@@ -24,7 +26,7 @@ ion-content{
     height: 300px;
     transform-origin: center top;
     transform: rotate(8deg);
-    border:none !important;
+    border-bottom:solid 1px #905d47 !important;
 }
 .profile{
     margin-top:10vh;
@@ -71,4 +73,22 @@ ion-content{
 
 .profile .info{
     color:var(--ion-color-primary-contrast);
+}
+
+
+.form-container{
+    border-radius:30px;
+    background:#fff;
+    padding:30px 10px 5px 10px;
+    margin:30vh 5vw 0 5vw;
+    --ion-background-color:#fff;
+    position: relative;
+    z-index:99999 !important;
+}
+
+.form-container ion-item{
+}
+
+.form-container ion-icon{
+    color:var(--ion-color-primary);
 }

@@ -36,9 +36,9 @@ ion-item{
 }
 
 .social-media-title{
-    font-size:18px;
+    font-size:1em;
     text-align:center;
-    color:#000;
+    color:var(--ion-color-medium);
 }
 
 .social-media-items{
@@ -46,8 +46,16 @@ ion-item{
 }
 
 .social-media-items ion-icon{
-    color:var(--ion-color-primary);
     font-size:3em;
     margin-left:10px;margin-right:10px;
+}
+.facebook{
+    color:#3b5998;
+}
+.twitter{
+    color:#00acee;
+}
+.google{
+    color:#d34836;
 }
 
