@@ -7,6 +7,25 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
+  our:boolean = true;
+  make: boolean = false;
   constructor() {}
+
+  ngOnInit(): void {
+    
+  }
+
+  public activate(which:number): void {
+    if(which === 1){
+      this.our = true;
+      this.make = false;
+    }else{
+      this.make = true;
+      this.our = false;
+    }
+    
+    
+  }
+
 
 }
