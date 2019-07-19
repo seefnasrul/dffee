@@ -9,6 +9,8 @@ export class Tab2Page {
 
   our:boolean = true;
   make: boolean = false;
+  menuItems = new Array(30);
+  cartCounter:number = 0;
   constructor() {}
 
   ngOnInit(): void {
@@ -27,5 +29,8 @@ export class Tab2Page {
     
   }
 
+  public addCart(){
+    this.cartCounter++;
+  }
 
 }
